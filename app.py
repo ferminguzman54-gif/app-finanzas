@@ -416,7 +416,7 @@ elif pagina == "📋 Historial":
         styled = (
             df_mostrar
             .style
-            .applymap(color_tipo, subset=["Tipo"])
+            .map(color_tipo, subset=["Tipo"])
             .format({"Monto": "${:,.2f}"})
         )
         st.dataframe(styled, use_container_width=True, height=420)
