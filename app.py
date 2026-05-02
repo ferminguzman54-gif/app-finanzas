@@ -272,7 +272,7 @@ with st.sidebar:
 # ENCABEZADO PRINCIPAL
 # ─────────────────────────────────────────────
 st.markdown('<p class="titulo-principal">💸 Gestor de Finanzas Personales</p>', unsafe_allow_html=True)
-st.markdown('<p class="subtitulo">Registra, analiza y visualiza tus movimientos financieros, desarrollado por Fermín Guzmán y Esteban Pedraza.</p>', unsafe_allow_html=True)
+st.markdown('<p class="subtitulo">Registra, analiza y visualiza tus movimientos financieros, desarrollado por Fermín Guzmán y Esteban Pedraza para la materia de Diseño de productos y procesos.</p>', unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────
 # MÉTRICAS GLOBALES (siempre visibles)
