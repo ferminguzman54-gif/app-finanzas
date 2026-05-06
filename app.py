@@ -259,7 +259,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────────────────────────────
 st.markdown('<p class="titulo-principal">💸 Gestor de Finanzas Personales</p>',
             unsafe_allow_html=True)
-st.markdown('<p class="subtitulo">Registra, analiza y visualiza tus movimientos financieros.</p>',
+st.markdown('<p class="subtitulo">Registra, analiza y visualiza tus movimientos financieros, diseñado por Fermín Guzmán y Esteban Pedraza para la materia de Diseño De Producto Y De Procesos.</p>',
             unsafe_allow_html=True)
 
 # ─── TARJETAS DE MÉTRICAS ─────────────────────────────────────────────
@@ -492,7 +492,7 @@ elif pagina == "📋 Historial":
 
         styled = (
             df_mostrar.style
-            .applymap(color_tipo, subset=["Tipo"])
+            .map(color_tipo, subset=["Tipo"])
             .format({"Monto": "${:,.2f}"})
         )
         st.dataframe(styled, use_container_width=True, height=420)
